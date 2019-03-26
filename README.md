@@ -5,7 +5,7 @@
 ## Assignment
 To create a small application using React
 
-## How to use it
+## How to use
 * Click here: [30percentkaraoke](https://30percentkaraoke.netlify.com/)
 * __Sing out loud!__
 
