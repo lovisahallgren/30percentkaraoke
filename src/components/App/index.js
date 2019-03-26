@@ -46,10 +46,10 @@ class App extends Component {
     return (
       <div className="App">
       <h1>30% karaoke</h1>
-        <div>
+        <div className="input-container">
           <div className="labels">
             <label htmlFor="searchSong">Enter song:</label>
-            <label htmlFor="searchArtist">Enter artist:</label>
+            <label className="artist-label" htmlFor="searchArtist">Enter artist:</label>
           </div>
           <Input type="text" value={this.state.searchSong} name="searchSong" placeholder="search for song" onChange={this.handleChange}/>
           <Input type="text" value={this.state.searchArtist} name="searchArtist" placeholder="search for artist" onChange={this.handleChange}/>

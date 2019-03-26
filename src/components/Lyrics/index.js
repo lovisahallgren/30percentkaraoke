@@ -9,6 +9,10 @@ const LyricsStyled = styled.p`
     font-size: 1.8rem;
     text-align: center;
     z-index: -2;
+
+    @media screen and (max-width: 700px) {
+        width: 80%;
+    }
 `
 
 const Lyrics = props => {
