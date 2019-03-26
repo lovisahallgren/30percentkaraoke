@@ -6,8 +6,13 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  /* font-family: ''; */
+}
 
+h1 {
+  font-size: 5rem;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  text-shadow: 4px 4px 4px grey;
+  padding: 10px;
 }
 
 .labels {
@@ -18,36 +23,19 @@
 
 .invisible-box {
   width: 70%;
-  height: 100%;
+  height: 200%;
   background: white;
-  animation-duration: 100s;
+  animation-duration: 150s;
   animation-name: invisible-box;
   position: absolute;
   top: 30vh;
   z-index: -1;
-  /* animation-delay: 5s; */
-  /* transition: 4s ease; */
 }
 
 @keyframes invisible-box {
   0% {
     transform: scaleY(1);
-    /* background-color: red;
-    left: 0px;
-    top: 0px; */
   }
-
-  /* 25% {
-    transform: scaleY(0.75);
-  }
-
-  50% {
-    transform: scaleY(0.5);
-  }
-
-  75% {
-    transform: scaleY(0.25);
-  } */
 
   100% {
     transform: scaleY(0);

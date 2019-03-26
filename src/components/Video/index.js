@@ -3,30 +3,30 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const VideoStyled = styled.iframe`
-    width: 40vw;
-    height: 40vh;
+    width: 20px;
+    height: 20px;
     background: blue;
 `
-
 const Video = props => {
     return (
         <VideoStyled
-            src="https://www.youtube.com/embed/35DY0vyVn_Y"
-        
+            src = {
+                `https://www.youtube.com/embed/?listType=search;list=${props.song}${props.artist}`
+            }
+            id="video"
+            width="100%" 
+            height="100%"  
+            frameborder="0" 
+            allow="autoplay"
+            autoplay="1"
         >
         </VideoStyled>
     );
 };
 
-            // <iframe 
-            //     width="100%" 
-            //     height="100%" 
-            //     src="https://www.youtube.com/embed/35DY0vyVn_Y" 
-            //     frameborder="0" 
-            //     allow="autoplay">
-            // </iframe>
 Video.propTypes = {
-    // video: PropTypes.string
+    song: PropTypes.string,
+    artist: PropTypes.string
 };
 
 export default Video;

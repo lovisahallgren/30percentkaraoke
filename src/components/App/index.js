@@ -4,7 +4,6 @@ import Button from '../Button';
 import Input from '../Input';
 import Lyrics from '../Lyrics';
 import Video from '../Video';
-
 class App extends Component {
 
   constructor() {
@@ -30,7 +29,6 @@ class App extends Component {
     )
   }
 
-
   handleChange = (event) => {
     const {name, value} = event.target
     this.setState({
@@ -46,6 +44,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <h1>30% karaoke</h1>
         <div>
           <div className="labels">
             <label htmlFor="searchSong">Enter song:</label>
@@ -54,9 +53,9 @@ class App extends Component {
           <Input type="text" value={this.state.searchSong} name="searchSong" placeholder="search for song" onChange={this.handleChange}/>
           <Input type="text" value={this.state.searchArtist} name="searchArtist" placeholder="search for artist" onChange={this.handleChange}/>
         </div>
+        <Video song={this.state.searchSong} artist={this.state.searchArtist} />
         <div onAnimationEnd={() => this.setState({ box: false })} className={this.state.box ? "invisible-box" : ""}></div>
         {this.state.lyrics === "" ? null : <Lyrics lyrics={this.state.lyrics}></Lyrics>}
-          {/* <Video searchQuery={this.state.searchQuery}/> */}
         <Button text="search for 30% lyrics" onClick={this.handleClick}/>
       </div>
     );

@@ -16,7 +16,7 @@ const InputStyled = styled.input`
     z-index: 2;
 
     &::placeholder {
-        color: green;
+        color: grey;
     }
 `
 
