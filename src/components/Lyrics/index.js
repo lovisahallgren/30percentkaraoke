@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const LyricsStyled = styled.p`
-    width: 40%;
-    height: auto;
+    width: 30%;
+    height: 40%;
     text-transform: none;
     font-size: 1.8rem;
     text-align: center;

@@ -25,19 +25,9 @@ h1 {
   width: 70%;
   height: 200%;
   background: white;
-  animation-duration: 150s;
-  animation-name: invisible-box;
   position: absolute;
   top: 58vh;
   z-index: -1;
-}
-
-@keyframes invisible-box {
-  0% {
-    transform: scaleY(1);
-  }
-
-  100% {
-    transform: scaleY(0);
-  }
+  transform: translateY(40%);
+  transition: transform 60s ease-in;
 }

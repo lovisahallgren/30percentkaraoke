@@ -33,6 +33,7 @@ class App extends Component {
     const {name, value} = event.target
     this.setState({
       [name]: value,
+      box: false,
     })
   }
 
@@ -54,7 +55,7 @@ class App extends Component {
           <Input type="text" value={this.state.searchArtist} name="searchArtist" placeholder="search for artist" onChange={this.handleChange}/>
         </div>
         <Video song={this.state.searchSong} artist={this.state.searchArtist} />
-        <div onAnimationEnd={() => this.setState({ box: false })} className={this.state.box ? "invisible-box" : ""}></div>
+        <div className={this.state.box ? "invisible-box" : ""}></div>
         {this.state.lyrics === "" ? null : <Lyrics lyrics={this.state.lyrics}></Lyrics>}
         <Button text="search for 30% lyrics" onClick={this.handleClick}/>
       </div>
