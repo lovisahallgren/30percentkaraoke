@@ -28,7 +28,7 @@ h1 {
   animation-duration: 150s;
   animation-name: invisible-box;
   position: absolute;
-  top: 30vh;
+  top: 58vh;
   z-index: -1;
 }
 
