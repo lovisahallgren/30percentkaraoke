@@ -57,7 +57,6 @@ class App extends Component {
         <div onAnimationEnd={() => this.setState({ box: false })} className={this.state.box ? "invisible-box" : ""}></div>
         {this.state.lyrics === "" ? null : <Lyrics lyrics={this.state.lyrics}></Lyrics>}
           {/* <Video searchQuery={this.state.searchQuery}/> */}
-          
         <Button text="search for 30% lyrics" onClick={this.handleClick}/>
       </div>
     );
