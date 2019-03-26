@@ -7,6 +7,7 @@ To create a small application using React
 
 ## How to use it
 * Click here: [30percentkaraoke](https://30percentkaraoke.netlify.com/)
+* __Sing out loud!__
 
 ## License 
 [MIT](https://github.com/lovisahallgren/30percentkaraoke/blob/master/LICENSE) © [Lovisa Hallgren](https://github.com/lovisahallgren)
